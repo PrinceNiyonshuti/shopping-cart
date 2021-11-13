@@ -1,23 +1,30 @@
 {
-	"products": [
-		{
-			"id": 1,
-			"image": "https://source.unsplash.com/1600x900/?food",
-			"title": "Burger",
-			"price": 12
-		},
-		{
-			"id": 2,
-			"image": "https://source.unsplash.com/1600x900/?food",
-			"title": "Pizza",
-			"price": 54
-		},
-		{
-			"id": 3,
-			"image": "https://source.unsplash.com/1600x900/?food",
-			"title": "Omlette",
-			"price": 25
-		}
-	],
-	"cart": []
+  "products": [
+    {
+      "id": 1,
+      "image": "https://source.unsplash.com/1600x900/?food,burger",
+      "title": "Burger",
+      "price": 12
+    },
+    {
+      "id": 2,
+      "image": "https://source.unsplash.com/1600x900/?food,pizza",
+      "title": "Pizza",
+      "price": 54
+    },
+    {
+      "id": 3,
+      "image": "https://source.unsplash.com/1600x900/?food,omelette",
+      "title": "Omlette",
+      "price": 25
+    }
+  ],
+  "cart": [
+    {
+      "title": "Pizza",
+      "image": "https://source.unsplash.com/1600x900/?food,pizza",
+      "price": 54,
+      "id": 1
+    }
+  ]
 }

@@ -5,7 +5,7 @@ import Product from "../Components/Product";
 import { ProductContext } from "../Context/ProductContext";
 
 const Home = () => {
-	const { productData } = useContext(ProductContext);
+	const { productData, AddToCart } = useContext(ProductContext);
 	return (
 		<div>
 			<div className="flex items-baseline justify-between">
@@ -13,9 +13,9 @@ const Home = () => {
 					<h2 className="text-lg">Shooping Cart</h2>
 				</div>
 			</div>
-			{productData && <Product productData={productData} />}
-
-			
+			{productData && (
+				<Product productData={productData} AddToCart={AddToCart} />
+			)}
 		</div>
 	);
 };

@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Product = ({productData}) => {
+const Product = ({ productData, AddToCart }) => {
 	return (
 		<div className="grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-6 gap-y-12 w-full mt-6">
 			{productData.map((product) => (
@@ -24,7 +24,9 @@ const Product = ({productData}) => {
 						</span>
 					</div>
 					<div className="flex items-center justify-between mt-3 m-2">
-						<button className="px-4 py-1 bg-blue-800 rounded-full text-white font-light hover:bg-blue-700">
+						<button
+							onClick={() => AddToCart(product)}
+							className="px-4 py-1 bg-blue-800 rounded-full text-white font-light hover:bg-blue-700">
 							Add to cart
 						</button>
 					</div>

@@ -31,17 +31,7 @@ function NavBar() {
 						</div>
 						<div className="md:hidden flex items-center">
 							<button className="outline-none menu-button">
-								<svg
-									className="w-6 h-6"
-									x-show="! showMenu"
-									fill="none"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									viewBox="0 00 24 24"
-									stroke="currentColor">
-									<path d="m4 6h16M4 12h16M4 18h16"></path>
-								</svg>
+								|||
 							</button>
 						</div>
 						<div className="hidden mobile-menu">
