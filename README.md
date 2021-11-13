@@ -32,11 +32,11 @@
 
 [Link To Repository](https://github.com/PrinceNiyonshuti/shopping-cart.git)
 
-[Link To Deployed App](https://itinerary-v3.netlify.app/)
+[Link To Deployed App](https://zatec-shopping-cart.netlify.app/)
 
 # 5. Documentation of your code where necessary
 
-documentation is a very important thing , thats why every function and code is documented and written well 
+documentation is a very important thing , thats why every function and code is documented and written well
 
 ### steps to follow installing the project
 
