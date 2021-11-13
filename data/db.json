@@ -17,13 +17,37 @@
       "image": "https://source.unsplash.com/1600x900/?food,omelette",
       "title": "Omlette",
       "price": 25
+    },
+    {
+      "title": "chocolate",
+      "price": 950,
+      "image": "https://source.unsplash.com/1600x900/?food,chocolate",
+      "id": 4
+    },
+    {
+      "title": "beer",
+      "price": 13,
+      "image": "https://source.unsplash.com/1600x900/?food,beer",
+      "id": 5
+    },
+    {
+      "title": "chicken",
+      "price": 7,
+      "image": "https://source.unsplash.com/1600x900/?food,chicken",
+      "id": 6
+    },
+    {
+      "title": "coca cola",
+      "price": 3,
+      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
+      "id": 7
     }
   ],
   "cart": [
     {
-      "title": "Pizza",
-      "image": "https://source.unsplash.com/1600x900/?food,pizza",
-      "price": 54,
+      "title": "coca cola",
+      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
+      "price": 3,
       "id": 1
     }
   ]

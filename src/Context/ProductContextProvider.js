@@ -1,14 +1,36 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { ProductContext } from "./ProductContext";
 
 const ProductContextProvider = (props) => {
 	const [productData, setProductData] = useState(null);
 	const [cartData, setCartData] = useState(null);
-    const [cartSize, setCartSize] = useState(null);
-    
-    // Creating New Product
+	const [cartSize, setCartSize] = useState(null);
+
+	// Creating New Product
+	const productForm = useRef();
+	const productName = useRef();
+	const productPrice = useRef();
+
+	const NewProduct = (event) => {
+		event.preventDefault();
+
+		const title = productName.current.value;
+		const price = productPrice.current.valueAsNumber;
+		const image = `https://source.unsplash.com/1600x900/?food,` + title;
+
+		const newProductDetails = { title, price, image };
+		fetch("http://localhost:8000/products", {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify(newProductDetails),
+		}).then(() => {
+			console.log(`New ${title} Product added`);
+			LoadAllData();
+		});
+		productForm.current.reset();
+	};
 
 	// Retrieve all products
 	useEffect(() => {
@@ -91,6 +113,10 @@ const ProductContextProvider = (props) => {
 		cartSize,
 		RemoveItem,
 		TotalAmount,
+		productForm,
+		productName,
+		productPrice,
+		NewProduct,
 	};
 	return (
 		<ProductContext.Provider value={value}>
