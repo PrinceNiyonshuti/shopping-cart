@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+<!-- @format -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 1. Problems and findings
 
-## Available Scripts
+## Problems
 
-In the project directory, you can run:
+- Adding data to array from another components
+- maintaining the state of the components when you add or delete new data
+- handle price and cart size data on navbar
+- render data without reloading app
 
-### `npm start`
+## Findings
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React useEffect to handle data before data loads to the DOM and after it loads
+- using Json Server to hold data to be used while fetching them like an API
+- using Reach history to reload or push to a new route using the history prop
+- handling and mastering use of the state and conditional rendering
+- concatinated script to watch json server and run app into single script
+- get data from api call and make a limit of data to retrieve
+- used a function to load all data and render them
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# 2. Time Taken to Complete
 
-### `npm test`
+- its been 2 to 3 hours working on the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 3. Your coding style and standards
 
-### `npm run build`
+- the coding style is used was line coding and error control and
+  the standard of using safe ,secure and portable codes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 4. Your source code files plus the final
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Link To Repository](https://github.com/PrinceNiyonshuti/shopping-cart.git)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Link To Deployed App](https://itinerary-v3.netlify.app/)
 
-### `npm run eject`
+# 5. Documentation of your code where necessary
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+documentation is a very important thing , thats why every function and code is documented and written well 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### steps to follow installing the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    npx install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### to run the project
 
-## Learn More
+    npm run prince
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 6. Used resources and documentation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Resources
 
-### Code Splitting
+- Json Server
+- React Router Dom
+- Concurrently
+- taiwindcss
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Documentation
 
-### Analyzing the Bundle Size
+### To Run the app use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    1. npm run prince
