@@ -19,15 +19,14 @@ const CartProducts = ({ cartData, RemoveItem }) => {
 							alt="product"
 						/>
 						<div className="flex flex-col ml-3 ">
-							<span className="text-md font-medium w-auto">
+							<span className="text-xl capitalize font-medium w-auto">
 								{cartList.title}
 							</span>
-							<span className="text-xs font-light text-gray-400">#66999</span>
 						</div>
 					</div>
 					<div className="flex justify-center items-center">
 						<div className="pr-8">
-							<span className="text-xs font-medium">$ {cartList.price}</span>
+							<span className="text-md font-medium">$ {cartList.price}</span>
 						</div>
 						<div onClick={() => RemoveItem(cartList.id)}>
 							<svg
