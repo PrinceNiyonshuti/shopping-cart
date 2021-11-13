@@ -21,16 +21,10 @@
   ],
   "cart": [
     {
-      "title": "Omlette",
-      "image": "https://source.unsplash.com/1600x900/?food,omelette",
-      "price": 25,
+      "title": "Pizza",
+      "image": "https://source.unsplash.com/1600x900/?food,pizza",
+      "price": 54,
       "id": 1
-    },
-    {
-      "title": "Burger",
-      "image": "https://source.unsplash.com/1600x900/?food,burger",
-      "price": 12,
-      "id": 2
     }
   ]
 }

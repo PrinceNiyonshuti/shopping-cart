@@ -5,7 +5,8 @@ import React from "react";
 const CartProducts = ({ cartData, RemoveItem }) => {
 	return (
 		<div>
-			{cartData.map((cartList) => (
+            {cartData.map((cartList) => (
+                
 				<div
 					key={cartList.id}
 					className="flex justify-between items-center pt-6 mt-6 border-t">
@@ -45,7 +46,8 @@ const CartProducts = ({ cartData, RemoveItem }) => {
 						</div>
 					</div>
 				</div>
-			))}
+            ))}
+            
 		</div>
 	);
 };

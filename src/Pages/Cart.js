@@ -6,7 +6,8 @@ import CartProducts from "../Components/CartProducts";
 import { ProductContext } from "../Context/ProductContext";
 
 const Cart = () => {
-	const { cartData, RemoveItem } = useContext(ProductContext);
+	const { cartData, RemoveItem, TotalAmount } = useContext(ProductContext);
+
 	return (
 		<div>
 			<div className="h-full ">
@@ -36,7 +37,7 @@ const Cart = () => {
 													Subtotal:
 												</span>
 												<span className="text-lg font-bold text-gray-800 ">
-													$24.90
+													${cartData && TotalAmount()}
 												</span>
 											</div>
 										</div>
