@@ -1,8 +1,23 @@
 {
-	"itenaryList": [
-		{ "id": 1, "image": "https://source.unsplash.com/1600x900/?food", "title": "Chair", "price": 12 },
-		{ "id": 2, "image": "https://source.unsplash.com/1600x900/?food", "title": "Chair", "price": 54 },
-		{ "id": 3, "image": "https://source.unsplash.com/1600x900/?food", "title": "Chair", "price": 25 }
+	"products": [
+		{
+			"id": 1,
+			"image": "https://source.unsplash.com/1600x900/?food",
+			"title": "Burger",
+			"price": 12
+		},
+		{
+			"id": 2,
+			"image": "https://source.unsplash.com/1600x900/?food",
+			"title": "Pizza",
+			"price": 54
+		},
+		{
+			"id": 3,
+			"image": "https://source.unsplash.com/1600x900/?food",
+			"title": "Omlette",
+			"price": 25
+		}
 	],
 	"cart": []
 }
