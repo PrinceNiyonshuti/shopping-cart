@@ -1,9 +1,10 @@
 /** @format */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ProductContext } from "./ProductContext";
 
 const ProductContextProvider = (props) => {
+	const [productData, setProductData] = useState(null);
 	// provider data
 	const value = {};
 	return (

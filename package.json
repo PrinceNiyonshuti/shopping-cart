@@ -19,7 +19,9 @@
 		"start": "craco start",
 		"build": "craco build",
 		"test": "craco test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"db": "json-server --watch data/db.json --port 8000",
+		"prince": "concurrently \"npm run start\" \"npm run db\""
 	},
 	"eslintConfig": {
 		"extends": [
