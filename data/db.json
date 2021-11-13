@@ -45,16 +45,16 @@
   ],
   "cart": [
     {
-      "title": "Omlette",
-      "image": "https://source.unsplash.com/1600x900/?food,omelette",
-      "price": 25,
-      "id": 2
+      "title": "Pizza",
+      "image": "https://source.unsplash.com/1600x900/?food,pizza",
+      "price": 54,
+      "id": 1
     },
     {
       "title": "coca cola",
       "image": "https://source.unsplash.com/1600x900/?food,coca cola",
       "price": 3,
-      "id": 3
+      "id": 2
     }
   ]
 }
