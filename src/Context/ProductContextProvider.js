@@ -5,6 +5,8 @@ import { ProductContext } from "./ProductContext";
 
 const ProductContextProvider = (props) => {
 	const [productData, setProductData] = useState(null);
+	const [cartData, setCartData] = useState(null);
+	const [cartSize, setCartSize] = useState(null);
 
 	// Retrieve all products
 	useEffect(() => {
@@ -28,23 +30,32 @@ const ProductContextProvider = (props) => {
 			body: JSON.stringify(cartedProduct),
 		}).then(() => {
 			console.log(`${cartedProduct.title} added to cart`);
-			window.location.reload();
+			fetch(`http://localhost:8000/cart`)
+				.then((res) => {
+					return res.json();
+				})
+				.then((data) => {
+					setCartData(data);
+					setCartSize(data.length);
+				});
+			// window.location.reload();
 		});
 	};
 
 	// Retrieve all products in cart
 	useEffect(() => {
-		fetch(`http://localhost:8000/products`)
+		fetch(`http://localhost:8000/cart`)
 			.then((res) => {
 				return res.json();
 			})
 			.then((data) => {
-				setProductData(data);
+				setCartData(data);
+				setCartSize(data.length);
 			});
 	}, []);
 
 	// provider data
-	const value = { productData, AddToCart };
+	const value = { productData, AddToCart, cartData, cartSize };
 	return (
 		<ProductContext.Provider value={value}>
 			{props.children}

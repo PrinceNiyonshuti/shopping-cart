@@ -1,9 +1,10 @@
 /** @format */
 
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-
+import { ProductContext } from "../Context/ProductContext";
 function NavBar() {
+	const { cartSize } = useContext(ProductContext);
 	return (
 		<div>
 			<nav className="bg-white shadow-lg">
@@ -25,14 +26,12 @@ function NavBar() {
 								className="py-1.5 px-2 font-medium border-2 border-blue-500 rounded bg-white hover:bg-blue-700 hover:text-white ">
 								Cart
 								<span className="mx-2 items-center h-8 bg-indigo-200 text-indigo-600 text-sm px-2 rounded">
-									5
+									{cartSize && cartSize}
 								</span>
 							</Link>
 						</div>
 						<div className="md:hidden flex items-center">
-							<button className="outline-none menu-button">
-								|||
-							</button>
+							<button className="outline-none menu-button">|||</button>
 						</div>
 						<div className="hidden mobile-menu">
 							<ul className="">
