@@ -6,7 +6,7 @@ import CartProducts from "../Components/CartProducts";
 import { ProductContext } from "../Context/ProductContext";
 
 const Cart = () => {
-	const { cartData } = useContext(ProductContext);
+	const { cartData, RemoveItem } = useContext(ProductContext);
 	return (
 		<div>
 			<div className="h-full ">
@@ -17,7 +17,12 @@ const Cart = () => {
 								<div className="md:grid  gap-2 ">
 									<div className="col-span-2 p-5">
 										<h1 className="text-xl font-medium ">Shopping Cart</h1>
-										{cartData && (<CartProducts cartData={cartData}/>)}
+										{cartData && (
+											<CartProducts
+												cartData={cartData}
+												RemoveItem={RemoveItem}
+											/>
+										)}
 										<div className="flex justify-between items-center mt-6 pt-6 border-t">
 											<div className="flex items-center">
 												<Link to="/">

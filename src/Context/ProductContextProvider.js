@@ -30,6 +30,7 @@ const ProductContextProvider = (props) => {
 			body: JSON.stringify(cartedProduct),
 		}).then(() => {
 			console.log(`${cartedProduct.title} added to cart`);
+
 			fetch(`http://localhost:8000/cart`)
 				.then((res) => {
 					return res.json();
@@ -54,8 +55,26 @@ const ProductContextProvider = (props) => {
 			});
 	}, []);
 
+	// Remove product from cart
+	const RemoveItem = (cartID) => {
+		fetch(`http://localhost:8000/cart/` + cartID, {
+			method: "DELETE",
+		}).then(() => {
+			console.log("Product Removed From cart");
+			fetch(`http://localhost:8000/cart`)
+				.then((res) => {
+					return res.json();
+				})
+				.then((data) => {
+					setCartData(data);
+					setCartSize(data.length);
+				});
+			// window.location.reload();
+		});
+	};
+
 	// provider data
-	const value = { productData, AddToCart, cartData, cartSize };
+	const value = { productData, AddToCart, cartData, cartSize, RemoveItem };
 	return (
 		<ProductContext.Provider value={value}>
 			{props.children}
