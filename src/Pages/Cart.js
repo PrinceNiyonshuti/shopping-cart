@@ -8,6 +8,16 @@ import { ProductContext } from "../Context/ProductContext";
 const Cart = () => {
 	const { cartData, RemoveItem, TotalAmount } = useContext(ProductContext);
 
+	const Counter = (cartItem) => {
+		const arr = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
+		const counts = {};
+
+		for (const num of arr) {
+			counts[num] = counts[num] ? counts[num] + 1 : 1;
+		}
+		return counts[cartItem];
+	};
+
 	return (
 		<div>
 			<div className="h-full ">
@@ -26,9 +36,14 @@ const Cart = () => {
 										)}
 										<div className="items-center mt-6 pt-6 border-t">
 											<p className="text-xl font-bold text-black">Summary</p>
-											<p className="text-md font-medium text-black">
-												Burger : x2
-											</p>
+											{cartData &&
+												cartData.map((cartSummary) => (
+													<p
+														key={cartSummary.id}
+														className="text-md font-medium text-black">
+														{cartSummary.title} : x {Counter(9)}
+													</p>
+												))}
 										</div>
 										<div className="flex justify-between items-center mt-6 pt-6 border-t">
 											<div className="flex items-center">
