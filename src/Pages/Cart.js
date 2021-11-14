@@ -24,6 +24,12 @@ const Cart = () => {
 												RemoveItem={RemoveItem}
 											/>
 										)}
+										<div className="items-center mt-6 pt-6 border-t">
+											<p className="text-xl font-bold text-black">Summary</p>
+											<p className="text-md font-medium text-black">
+												Burger : x2
+											</p>
+										</div>
 										<div className="flex justify-between items-center mt-6 pt-6 border-t">
 											<div className="flex items-center">
 												<Link to="/">
