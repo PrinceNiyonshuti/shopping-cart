@@ -33,8 +33,8 @@ const Cart = () => {
 												</Link>
 											</div>
 											<div className="flex justify-center items-end">
-												<span className="text-sm font-medium text-gray-400 mr-1">
-													Subtotal:
+												<span className="text-xl font-bold text-black mr-1">
+													Total:
 												</span>
 												<span className="text-lg font-bold text-gray-800 ">
 													${cartData && TotalAmount()}
