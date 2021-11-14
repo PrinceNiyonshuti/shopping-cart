@@ -25,9 +25,13 @@ function NavBar() {
 								to="/cart"
 								className="py-1.5 px-2 font-medium border-2 border-blue-500 rounded bg-white hover:bg-blue-700 hover:text-white ">
 								Cart
-								<span className="mx-2 items-center h-8 bg-indigo-200 text-indigo-600 text-sm px-2 rounded">
-									{cartSize && cartSize}
-								</span>
+								{cartSize ? (
+									<span className="mx-2 items-center h-8 bg-indigo-200 text-indigo-600 text-sm px-2 rounded">
+										{cartSize}
+									</span>
+								) : (
+									""
+								)}
 							</Link>
 						</div>
 						<div className="md:hidden flex items-center">

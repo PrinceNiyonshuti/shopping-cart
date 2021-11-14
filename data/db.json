@@ -45,16 +45,28 @@
   ],
   "cart": [
     {
-      "title": "Pizza",
-      "image": "https://source.unsplash.com/1600x900/?food,pizza",
-      "price": 54,
+      "title": "Burger",
+      "image": "https://source.unsplash.com/1600x900/?food,burger",
+      "price": 12,
       "id": 1
     },
     {
-      "title": "coca cola",
-      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
-      "price": 3,
+      "title": "Pizza",
+      "image": "https://source.unsplash.com/1600x900/?food,pizza",
+      "price": 54,
       "id": 2
+    },
+    {
+      "title": "Burger",
+      "image": "https://source.unsplash.com/1600x900/?food,burger",
+      "price": 12,
+      "id": 3
+    },
+    {
+      "title": "Burger",
+      "image": "https://source.unsplash.com/1600x900/?food,burger",
+      "price": 12,
+      "id": 4
     }
   ]
 }
