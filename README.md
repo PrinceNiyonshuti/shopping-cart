@@ -8,6 +8,8 @@
 - maintaining the state of the components when you add or delete new data
 - handle price and cart size data on navbar
 - render data without reloading app
+- rendering cart summary and product frequency 
+- deploying on netlify sometimes it doesn't read the json server 
 
 ## Findings
 

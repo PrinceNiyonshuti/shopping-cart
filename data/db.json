@@ -51,18 +51,6 @@
       "id": 2
     },
     {
-      "title": "Burger",
-      "image": "https://source.unsplash.com/1600x900/?food,burger",
-      "price": 12,
-      "id": 3
-    },
-    {
-      "title": "Burger",
-      "image": "https://source.unsplash.com/1600x900/?food,burger",
-      "price": 12,
-      "id": 4
-    },
-    {
       "title": "chocolate",
       "image": "https://source.unsplash.com/1600x900/?food,chocolate",
       "price": 950,
