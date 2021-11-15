@@ -41,38 +41,25 @@
       "price": 3,
       "image": "https://source.unsplash.com/1600x900/?food,coca cola",
       "id": 7
+    },
+    {
+      "title": "Shakes",
+      "price": 17,
+      "image": "https://source.unsplash.com/1600x900/?food,Shakes",
+      "id": 8
+    },
+    {
+      "title": "Biscuit",
+      "price": 2,
+      "image": "https://source.unsplash.com/1600x900/?food,Biscuit",
+      "id": 9
+    },
+    {
+      "title": "Milk",
+      "price": 6,
+      "image": "https://source.unsplash.com/1600x900/?food,Milk",
+      "id": 10
     }
   ],
-  "cart": [
-    {
-      "title": "coca cola",
-      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
-      "price": 3,
-      "id": 2
-    },
-    {
-      "title": "chocolate",
-      "image": "https://source.unsplash.com/1600x900/?food,chocolate",
-      "price": 950,
-      "id": 5
-    },
-    {
-      "title": "chocolate",
-      "image": "https://source.unsplash.com/1600x900/?food,chocolate",
-      "price": 950,
-      "id": 6
-    },
-    {
-      "title": "coca cola",
-      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
-      "price": 3,
-      "id": 7
-    },
-    {
-      "title": "coca cola",
-      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
-      "price": 3,
-      "id": 8
-    }
-  ]
+  "cart": []
 }

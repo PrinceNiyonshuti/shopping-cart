@@ -1,6 +1,8 @@
 /** @format */
 
 import React, { useContext } from "react";
+import Button from "../Components/Button";
+import TextInput from "../Components/TextInput";
 import { ProductContext } from "../Context/ProductContext";
 
 function AddProduct() {
@@ -12,32 +14,23 @@ function AddProduct() {
 			<form onSubmit={NewProduct} ref={productForm}>
 				<div className="flex">
 					<div className="w-full bg-white p-2 rounded">
-						<div className=" p-3 w-full">
-							<input
-								type="text"
-								required
-								id="name"
-								ref={productName}
-								className="border p-2 rounded w-full"
-								placeholder="Product Name"
-							/>
-						</div>
-						<div className=" p-3 w-full">
-							<input
-								type="number"
-								required
-								id="price"
-								ref={productPrice}
-								className="border p-2 rounded w-full"
-								placeholder="Product Price"
-							/>
-						</div>
-
+						<TextInput
+							type={"text"}
+							required
+							id={"name"}
+							refData={productName}
+							placeholder={"Product Name"}
+						/>
+						<TextInput
+							type={"number"}
+							required
+							id={"price"}
+							refData={productPrice}
+							placeholder={"Product Price"}
+						/>
 						<div className="flex justify-between mx-3">
 							<div>
-								<button className="px-4 py-1 bg-blue-800 text-white rounded font-light hover:bg-blue-700">
-									Add Product
-								</button>
+								<Button name={"Add New Product"} radius={"rounded"}/>
 							</div>
 						</div>
 					</div>
