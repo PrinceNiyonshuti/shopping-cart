@@ -74,6 +74,17 @@ const ProductContextProvider = (props) => {
 		return cartData.reduce((a, v) => (a = a + v.price), 0);
 	};
 
+	// Cart Summary Details
+
+	const FrequencyCounter = (cartItem) => {
+		const counts = {};
+		let result = cartData.map((cartProduct) => cartProduct.title);
+		for (const num of result) {
+			counts[num] = counts[num] ? counts[num] + 1 : 1;
+		}
+		return counts[cartItem];
+	};
+
 	// Remove product from cart
 	const RemoveItem = (cartID) => {
 		fetch(`http://localhost:8000/cart/` + cartID, {
@@ -113,6 +124,7 @@ const ProductContextProvider = (props) => {
 		cartSize,
 		RemoveItem,
 		TotalAmount,
+		FrequencyCounter,
 		productForm,
 		productName,
 		productPrice,

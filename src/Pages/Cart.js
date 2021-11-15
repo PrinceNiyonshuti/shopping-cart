@@ -6,17 +6,13 @@ import CartProducts from "../Components/CartProducts";
 import { ProductContext } from "../Context/ProductContext";
 
 const Cart = () => {
-	const { cartData, RemoveItem, TotalAmount } = useContext(ProductContext);
+	const { cartData, cartSize, RemoveItem, TotalAmount, FrequencyCounter } = useContext(ProductContext);
 
-	const Counter = (cartItem) => {
-		const arr = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
-		const counts = {};
-
-		for (const num of arr) {
-			counts[num] = counts[num] ? counts[num] + 1 : 1;
-		}
-		return counts[cartItem];
-	};
+	let CartSummaryItems = [];
+	CartSummaryItems = cartData.filter(
+		(item, index, self) =>
+			index === self.findIndex((product) => product.title === item.title)
+	);
 
 	return (
 		<div>
@@ -34,16 +30,21 @@ const Cart = () => {
 												RemoveItem={RemoveItem}
 											/>
 										)}
+
 										<div className="items-center mt-6 pt-6 border-t">
 											<p className="text-xl font-bold text-black">Summary</p>
 											{cartData &&
-												cartData.map((cartSummary) => (
+												CartSummaryItems.map((cartSummary) => (
 													<p
 														key={cartSummary.id}
 														className="text-md font-medium text-black">
-														{cartSummary.title} : x {Counter(9)}
+														{cartSummary.title} : x {FrequencyCounter(cartSummary.title)}
 													</p>
 												))}
+
+											<p className="text-xl font-bold mt-5 text-black">
+												Total Items {cartSize}
+											</p>
 										</div>
 										<div className="flex justify-between items-center mt-6 pt-6 border-t">
 											<div className="flex items-center">

@@ -45,15 +45,9 @@
   ],
   "cart": [
     {
-      "title": "Burger",
-      "image": "https://source.unsplash.com/1600x900/?food,burger",
-      "price": 12,
-      "id": 1
-    },
-    {
-      "title": "Pizza",
-      "image": "https://source.unsplash.com/1600x900/?food,pizza",
-      "price": 54,
+      "title": "coca cola",
+      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
+      "price": 3,
       "id": 2
     },
     {
@@ -67,6 +61,30 @@
       "image": "https://source.unsplash.com/1600x900/?food,burger",
       "price": 12,
       "id": 4
+    },
+    {
+      "title": "chocolate",
+      "image": "https://source.unsplash.com/1600x900/?food,chocolate",
+      "price": 950,
+      "id": 5
+    },
+    {
+      "title": "chocolate",
+      "image": "https://source.unsplash.com/1600x900/?food,chocolate",
+      "price": 950,
+      "id": 6
+    },
+    {
+      "title": "coca cola",
+      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
+      "price": 3,
+      "id": 7
+    },
+    {
+      "title": "coca cola",
+      "image": "https://source.unsplash.com/1600x900/?food,coca cola",
+      "price": 3,
+      "id": 8
     }
   ]
 }
