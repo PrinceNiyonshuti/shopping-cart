@@ -63,3 +63,8 @@ documentation is a very important thing , thats why every function and code is d
 ### To Run the app use
 
     1. npm run prince
+
+
+## Feedback and issues
+
+Any issue and feedback from the app don't hesitate to make an issue
